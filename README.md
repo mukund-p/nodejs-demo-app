@@ -43,7 +43,7 @@ This shows a successful CI/CD run triggered by a push to the **`main`** branch.
 
 ---
 
-### ✅ 2. App Output – Via Browser
+### 🌐 2. App Output – Via Browser
 This confirms the app is running successfully on Browser at port **3000**.
 
 ![App Output](screenshots/browser-response.png)
