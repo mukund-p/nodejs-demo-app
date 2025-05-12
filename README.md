@@ -28,7 +28,7 @@ nodejs-demo-app/ <br>
 
 ## ⚙️ CI/CD Pipeline Flow
 
-1. Push code to `main` branch.
+1. Push code to **`main`** branch.
 2. GitHub Actions builds and pushes Docker image to DockerHub.
 3. EC2 instance pulls the image and deploys the app via Docker.
 
@@ -36,29 +36,29 @@ nodejs-demo-app/ <br>
 
 ## 🖼 Screenshots
 
-### ✅ 1. GitHub Actions Workflow – Success
-This shows a successful CI/CD run triggered by a push to the `main` branch.
+### ✅ 1. GitHub Actions Workflow – Success ###
+This shows a successful CI/CD run triggered by a push to the **`main`** branch.
 
 ![CI/CD Success](screenshots/github-actions-success.png)
 
 ---
 
 ### ✅ 2. App Output – Via Browser
-This confirms the app is running successfully on Browser at port 3000.
+This confirms the app is running successfully on Browser at port **3000**.
 
 ![App Output](screenshots/browser-response.png)
 
 ---
 
 ### 📦 3. DockerHub – Image Successfully Pushed
-The Docker image is available on DockerHub after CI/CD completion.
+The Docker image is available on **DockerHub** after CI/CD completion.
 
 ![DockerHub Image](screenshots/dockerhub-image.png)
 
 ---
 
 ### 🌐 4. App Output – Via Curl
-This confirms the app is running successfully on EC2 at port 3000.
+This confirms the app is running successfully on EC2 at port **3000**.
 
 ![App Output](screenshots/curl-response.png)
 
@@ -67,10 +67,10 @@ This confirms the app is running successfully on EC2 at port 3000.
 
 ## Test Locally
 ```bash
-docker build -t demo-app .
-docker run -p 3000:3000 demo-app
+docker build -t mukundp2001/demo-app:latest .
+docker run -p 3000:3000 mukundp2001/demo-app:latest
 curl http://localhost:3000
 ```
 
 ## 🌐 Live on EC2
-Access via: `http://<your-ec2-public-ip>:3000`
+**Access via**: `http://<your-ec2-public-ip>:3000`
