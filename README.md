@@ -23,7 +23,7 @@ nodejs-demo-app/ <br>
 │  └── curl-response.png <br>
 ├── Dockerfile <br>
 ├── index.js <br>
-├── package.json <br>
+└── package.json <br>
 
 ---
 
